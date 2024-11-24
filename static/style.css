@@ -1,0 +1,142 @@
+/* Ogólne style */
+body {
+	font-family: "Arial", sans-serif;
+	background-color: #1a1a1d; /* Ciemne tło */
+	color: #f5f5f5; /* Jasna czcionka */
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+/* Kontener */
+.container {
+	width: 90%;
+	max-width: 600px;
+	background-color: #2b2b2f; /* Kontrastujące ciemnoszare tło */
+	border-radius: 15px;
+	padding: 30px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+	text-align: center;
+}
+
+/* Nagłówki */
+h1 {
+	font-size: 2.5em;
+	color: #50c878; /* Szmaragdowy kolor */
+	margin-bottom: 20px;
+}
+
+/* Lista zadań */
+.task-list {
+	list-style: none;
+	padding: 0;
+	margin: 20px 0;
+}
+
+.task-list li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #323237; /* Ciemnoszary z lekkim kontrastem */
+	border-radius: 10px;
+	padding: 15px;
+	margin-bottom: 10px;
+	transition: background-color 0.3s ease;
+}
+
+.task-list li:hover {
+	background-color: #3d3d45; /* Rozjaśniona wersja dla efektu hover */
+}
+
+/* Przyciski */
+.button {
+	display: inline-block;
+	padding: 12px 20px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #ffffff; /* Białe litery */
+	text-transform: uppercase;
+	background: #50c878; /* Szmaragdowy kolor */
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+	text-align: center;
+	transition: all 0.3s ease-in-out;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.button:hover {
+	background: #3cb371; /* Ciemniejszy szmaragdowy */
+	transform: translateY(-3px);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Przyciski akcji w liście */
+.small-button {
+	font-size: 14px;
+	padding: 8px 15px;
+	border-radius: 20px;
+}
+
+.small-button.danger {
+	background: #d9534f; /* Czerwony dla "Delete" */
+}
+
+.small-button.danger:hover {
+	background: #c9302c; /* Ciemniejszy czerwony */
+}
+
+/* Formularze */
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 20px;
+}
+
+form input[type="text"] {
+	width: 80%;
+	max-width: 400px;
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #4e4e54; /* Subtelny szary */
+	border-radius: 5px;
+	background-color: #2b2b2f;
+	color: #f5f5f5;
+}
+
+form input[type="text"]::placeholder {
+	color: #a0a0a5; /* Delikatny szary */
+}
+
+form button {
+	background-color: #50c878;
+	border: none;
+	border-radius: 30px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 12px 20px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+form button:hover {
+	background-color: #3cb371;
+}
+
+/* Linki */
+a {
+	color: #50c878;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+a:hover {
+	color: #3cb371;
+	text-decoration: underline;
+}
